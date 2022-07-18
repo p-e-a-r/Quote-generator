@@ -1,0 +1,97 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mainColor: hsl(276, 21%, 66%);
+    --secondColor: hsl(41, 49%, 67%);
+    --bodyColor: hsl(276, 21%, 45%);
+    --fontColor: hsl(276, 20%, 95%);
+}
+
+body{
+    background-color: var(--bodyColor);
+    font-family: "Manrope", "sans-serif";
+}
+
+.main-container{
+    width: 550px;
+    height: 350px;
+    border-radius: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--mainColor);
+    
+}
+
+h3{
+    color: var(--secondColor);
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    letter-spacing: 0.2em;
+}
+
+#quote{
+    color: var(--fontColor);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#author{
+    color: var(--fontColor);
+    position: absolute;
+        bottom: 4em;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 1rem;
+        
+}
+
+
+.btn-cont{
+    position: absolute;
+    bottom: -2em;
+    left: 50%;
+    transform: translate(-50%);
+
+    
+}
+
+button{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 2.4em;
+    background-color: var(--secondColor);
+}
+
+.dice{
+    height: 30px;
+    border-radius: 5px;
+}
+
+button:hover{
+    box-shadow: 0px 0px 58px 10px rgba(212, 186, 130, 0.85);
+    cursor: pointer;
+}
+
+button.active{
+    
+            transform: scale(0.98);
+            /* Scaling button to 0.98 to its original size */
+            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+            /* Lowering the shadow */
+}
